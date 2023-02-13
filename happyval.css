@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+.vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .vid {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.title {
+    font-family: cursive;
+    color: darkred;   
+    font-size: 70px;
+    padding-top: 7%;
+    animation-duration: 15s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+}
+
+.subt {
+    font-family: cursive;
+    color: darkred;   
+    font-size: 30px;
+    padding-bottom: 3%;
+    animation-duration: 15s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+}
+
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-top: 0%;
+      width: 100%;
+    }
+}
